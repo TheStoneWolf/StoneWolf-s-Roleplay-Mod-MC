@@ -5,11 +5,12 @@ import stonewolfsroleplay.ObjectRegistering;
 
 public class ModItems {
 	
-	public static BaseItem CookedEgg;
+	public static BaseItem friedEgg = new BaseItem();
 	
-	public static void init() {
+	public static void preInit() {
 		
-		ObjectRegistering.registerPlainItem(CookedEgg = new BaseItem(), "itemCookedEgg", CreativeTabs.FOOD);
+		//Calls to the method which register the item in question
+		ObjectRegistering.registerPlainItem(friedEgg, "friedEgg", CreativeTabs.FOOD);
 		
 	}
 

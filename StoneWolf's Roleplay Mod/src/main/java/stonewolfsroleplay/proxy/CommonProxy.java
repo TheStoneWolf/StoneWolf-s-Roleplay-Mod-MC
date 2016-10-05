@@ -6,6 +6,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class CommonProxy {
 	
+	//Not in use yet but potentially in the future when more advanced modifications takes place.
+	//Until then, stay away!
+	
 	public void preInit(FMLPreInitializationEvent e) {
 
     }
