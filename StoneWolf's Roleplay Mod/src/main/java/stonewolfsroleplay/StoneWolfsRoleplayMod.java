@@ -1,14 +1,10 @@
 package stonewolfsroleplay;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.RenderItem;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import stonewolfsroleplay.Item.BaseItem;
 import stonewolfsroleplay.Item.ModItems;
 import stonewolfsroleplay.proxy.CommonProxy;
 
@@ -29,14 +25,11 @@ public class StoneWolfsRoleplayMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		
 		ModItems.init();
-		
+	
 	}
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		
-		RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();  
-        renderItem.getItemModelMesher().register(ModItems.CookedEgg, 0, new ModelResourceLocation(modId + ":" + "itemCookedEgg", "inventory"));
 		
 	}
 

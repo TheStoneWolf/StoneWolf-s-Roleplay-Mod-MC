@@ -13,8 +13,7 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
         
-        //ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation(ModItems.CookedEgg.getRegistryName(), "inventory");
-        //ModelLoader.setCustomModelResourceLocation(ModItems.CookedEgg, 0, itemModelResourceLocation);
+        ModelLoader.setCustomModelResourceLocation(ModItems.CookedEgg, 0, new ModelResourceLocation("stonewolfsroleplay:itemCookedEgg","inventory"));
     }
 
     @Override
