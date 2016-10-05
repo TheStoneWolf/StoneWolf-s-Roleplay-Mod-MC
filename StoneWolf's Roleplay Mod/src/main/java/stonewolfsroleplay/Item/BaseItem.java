@@ -5,10 +5,11 @@ import net.minecraft.item.Item;
 
 public class BaseItem extends Item {
 	
-	public BaseItem(String unlocalizedName, CreativeTabs tab) {
+	public BaseItem() {
 		super();
-		this.setRegistryName(unlocalizedName);
+		/*this.setRegistryName(unlocalizedName);
 		this.setUnlocalizedName(unlocalizedName);
 		this.setCreativeTab(tab);
+		*/
 	}
 }

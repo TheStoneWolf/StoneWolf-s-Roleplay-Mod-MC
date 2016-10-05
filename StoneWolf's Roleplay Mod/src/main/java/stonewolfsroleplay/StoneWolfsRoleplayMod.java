@@ -1,11 +1,13 @@
 package stonewolfsroleplay;
 
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import stonewolfsroleplay.Item.ModItems;
+import stonewolfsroleplay.proxy.ClientProxy;
 import stonewolfsroleplay.proxy.CommonProxy;
 
 @Mod(modid = StoneWolfsRoleplayMod.modId, name = StoneWolfsRoleplayMod.name, version = StoneWolfsRoleplayMod.version, acceptedMinecraftVersions = "[1.10.2]")
@@ -25,6 +27,7 @@ public class StoneWolfsRoleplayMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		
 		ModItems.init();
+		
 	
 	}
 
