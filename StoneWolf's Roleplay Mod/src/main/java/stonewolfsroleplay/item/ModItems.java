@@ -1,11 +1,11 @@
-package stonewolfsroleplay.Item;
+package stonewolfsroleplay.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 import stonewolfsroleplay.ObjectRegistering;
 
 public class ModItems {
 	
-	public static BaseItem friedEgg = new BaseItem();
+	public static FriedEgg friedEgg = new FriedEgg();
 	
 	public static void preInit() {
 		

@@ -5,7 +5,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import stonewolfsroleplay.Item.ModItems;
+import stonewolfsroleplay.item.ModItems;
 import stonewolfsroleplay.proxy.CommonProxy;
 
 @Mod(modid = StoneWolfsRoleplayMod.modId, name = StoneWolfsRoleplayMod.name, version = StoneWolfsRoleplayMod.version, acceptedMinecraftVersions = "[1.10.2]")
