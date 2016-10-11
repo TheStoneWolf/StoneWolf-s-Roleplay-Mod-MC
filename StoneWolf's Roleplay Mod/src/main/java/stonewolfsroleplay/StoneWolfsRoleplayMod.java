@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import stonewolfsroleplay.block.ModBlocks;
 import stonewolfsroleplay.item.ModItems;
 import stonewolfsroleplay.proxy.CommonProxy;
 
@@ -27,6 +28,9 @@ public class StoneWolfsRoleplayMod {
 		
 		//Makes the items - both their textures and their behaviour
 		ModItems.preInit();
+		
+		//Makes the blocks - both their textures and their behaviour
+		ModBlocks.preInit();
 		
 	
 	}
