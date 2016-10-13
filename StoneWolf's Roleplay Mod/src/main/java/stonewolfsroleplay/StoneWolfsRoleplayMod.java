@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import stonewolfsroleplay.block.ModBlocks;
 import stonewolfsroleplay.item.ModItems;
 import stonewolfsroleplay.proxy.CommonProxy;
+import stonewolfsroleplay.tileentity.TileEntities;
 
 @Mod(modid = StoneWolfsRoleplayMod.modId, name = StoneWolfsRoleplayMod.name, version = StoneWolfsRoleplayMod.version, acceptedMinecraftVersions = "[1.10.2]")
 public class StoneWolfsRoleplayMod {
@@ -31,6 +32,9 @@ public class StoneWolfsRoleplayMod {
 		
 		//Makes the blocks - both their textures and their behaviour
 		ModBlocks.preInit();
+		
+		//Registers TileEntities
+		TileEntities.init();
 		
 	
 	}

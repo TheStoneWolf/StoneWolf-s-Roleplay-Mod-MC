@@ -23,18 +23,19 @@ public class ObjectRegistering {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation("stonewolfsroleplay:" + unlocalizedName, "inventory"));
 	}
 	
-	public static void registerBlock(Block block, String unlocalizedName, CreativeTabs tab) {
+	public static void registerBlock(Block block, String unlocalizedName, CreativeTabs tab, float hardness, float resistance) {
 		
 		block.setRegistryName(unlocalizedName);
 		block.setUnlocalizedName(unlocalizedName);
 		GameRegistry.register(block);
 		block.setCreativeTab(tab);
+		block.setHardness(hardness);
+		block.setResistance(resistance);
 		
 		ItemBlock itemBlock = new ItemBlock(block);
 		itemBlock.setRegistryName(unlocalizedName);
 		GameRegistry.register(itemBlock);
-		//if(unlocalizedName != "kitchenCounter")
-			ModelLoader.setCustomModelResourceLocation(itemBlock, 0, new ModelResourceLocation("stonewolfsroleplay:" + unlocalizedName, "inventory"));
+		ModelLoader.setCustomModelResourceLocation(itemBlock, 0, new ModelResourceLocation("stonewolfsroleplay:" + unlocalizedName, "inventory"));
 	}
 	
 }
